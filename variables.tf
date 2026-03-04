@@ -15,3 +15,9 @@ variable "zone" {
   type        = string
   default     = "europe-west3-a"
 }
+
+variable "api_key" {
+  description = "Der geheime API-Key für EODHD"
+  type        = string
+  sensitive   = true
+}
